@@ -1,0 +1,52 @@
+{
+  "templates": [
+    {
+      "name": "tax-articles-and-tips",
+      "urls": ["https://turbotax.intuit.com/tax-tools/tax-articles-and-tips/"],
+      "description": "TurboTax tax articles and tips landing page with featured/recent article cards, video tabs, category carousels, tools grid, and categorized link columns",
+      "blocks": [
+        {
+          "name": "section-hero",
+          "instances": ["section.bg-tofu100.py-60"],
+          "section": "center-aligned, light-background"
+        },
+        {
+          "name": "cards",
+          "instances": [
+            ".flex-1.flex1Children",
+            "div[class*='Grid-md:grid-cols-5']",
+            "div[class*='Grid-xl:grid-cols-4']",
+            "div[class*='Grid-md:grid-cols-3'][class*='Grid-grid-rows-fr1']"
+          ]
+        },
+        {
+          "name": "tabs",
+          "instances": ["div.idsTSTabs"]
+        },
+        {
+          "name": "carousel",
+          "instances": ["div.glide"]
+        },
+        {
+          "name": "columns",
+          "instances": ["div[class*='Grid-md:grid-cols-4']"]
+        },
+        {
+          "name": "section-videos",
+          "instances": ["div.bg-tofu100 > div.fixed-width > section"],
+          "section": "light-background"
+        },
+        {
+          "name": "section-tools",
+          "instances": ["div.bg-tofu100.pt-40"],
+          "section": "light-background"
+        },
+        {
+          "name": "section-security",
+          "instances": ["div[id='smal']"],
+          "section": "center-aligned"
+        }
+      ]
+    }
+  ]
+}
